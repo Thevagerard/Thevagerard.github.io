@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Theva Gerard</title>
+    <meta name="description" content="Portfolio de Theva Gerard — Business Development & Strategic Partnerships. CV, expériences, compétences et contact.">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main">Skip to content</a>
 
     <div id="page">
         
         <!-- HEADER -->
         <header>
             <div class="header-content">
-                <div class="contact-icons">
-                    <a href="mailto:gerardtheva@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/theva-gerard" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <span class="phone-number"><i class="fas fa-phone"></i> +33 6 35 33 33 05</span>
+                <div class="contact-icons" aria-label="Contact information">
+                    <a href="mailto:gerardtheva@gmail.com" title="Email" aria-label="Send email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/theva-gerard" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="tel:+33635333305" class="phone-number" aria-label="Phone"><i class="fas fa-phone" aria-hidden="true"></i> +33 6 35 33 33 05</a>
                 </div>
                 
                 <div class="title-block">
@@ -27,14 +32,14 @@
                 </div>
 
                 <div class="photo-id">
-                    <!-- Mets ta photo ici (nommée photo.jpg dans le dossier img) -->
-                    <img src="img/photo.jpg" alt="Theva Gerard">
+                    <!-- Mets ta photo ici (nommée photo.jpeg dans le dossier img) -->
+                    <img src="img/photo.jpeg" alt="Theva Gerard" loading="lazy" width="150" height="150">
                 </div>
             </div>
         </header>
 
         <!-- NAVIGATION MENU -->
-        <nav id="menu">
+        <nav id="menu" aria-label="Main navigation">
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#experience">Experiences</a></li>
@@ -45,12 +50,12 @@
         </nav>
 
         <!-- MAIN CONTENT -->
-        <div class="corps">
+        <div class="corps" id="main">
 
             <!-- CV DOWNLOAD BUTTON -->
             <div class="download-cv">
-                <a href="cv_theva_gerard.pdf" target="_blank" class="btn-cv">
-                    <i class="fas fa-file-pdf"></i> Download Resume (PDF)
+                <a href="cv_theva_gerard.pdf" target="_blank" rel="noopener noreferrer" class="btn-cv" download="Theva_Gerard_CV.pdf">
+                    <i class="fas fa-file-pdf" aria-hidden="true"></i> Download Resume (PDF)
                 </a>
             </div>
 
@@ -184,7 +189,7 @@
                 <table class="skills-table">
                     <tr>
                         <td class="skill-category">Soft Skills</td>
-                        <td>Communication, Team Work, Strategy & Negotiation, Management, Project Management</td>
+                        <td>Communication, Teamwork, Strategy & Negotiation, Management, Project Management</td>
                     </tr>
                     <tr>
                         <td class="skill-category">Data & Tools</td>
@@ -205,11 +210,11 @@
             <section id="hobbies">
                 <h2>Hobbies</h2>
                 <div class="hobbies-grid">
-                    <div class="hobby-item"><i class="fas fa-running"></i> Hyrox (Competition)</div>
-                    <div class="hobby-item"><i class="fas fa-water"></i> Surf</div>
-                    <div class="hobby-item"><i class="fas fa-plane"></i> World Travel</div>
-                    <div class="hobby-item"><i class="fas fa-guitar"></i> Guitar</div>
-                    <div class="hobby-item"><i class="fas fa-medal"></i> Judo (Black Belt)</div>
+                    <div class="hobby-item"><i class="fas fa-running" aria-hidden="true"></i> Hyrox (Competition)</div>
+                    <div class="hobby-item"><i class="fas fa-water" aria-hidden="true"></i> Surf</div>
+                    <div class="hobby-item"><i class="fas fa-plane" aria-hidden="true"></i> World Travel</div>
+                    <div class="hobby-item"><i class="fas fa-guitar" aria-hidden="true"></i> Guitar</div>
+                    <div class="hobby-item"><i class="fas fa-medal" aria-hidden="true"></i> Judo (Black Belt)</div>
                 </div>
             </section>
 
