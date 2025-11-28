@@ -1,0 +1,215 @@
+/* RESET ET BASE */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { padding-left: 20px; }
+
+/* CONTENEUR PRINCIPAL */
+#page {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    padding: 20px;
+    border-bottom: 4px solid #33498c;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title-block {
+    text-align: center;
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.title-block h1 {
+    font-family: 'Impact', sans-serif;
+    font-size: 38px;
+    margin: 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.title-block hr {
+    width: 100px;
+    border: 1px solid #333;
+}
+
+.subtitle {
+    font-variant: small-caps;
+    color: #33498c;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-icons a, .phone-number {
+    font-size: 16px;
+    color: #33498c;
+    font-weight: bold;
+}
+.contact-icons i { margin-right: 8px; font-size: 18px; }
+
+.photo-id img {
+    border-radius: 5px;
+    width: 120px; 
+    height: 120px;
+    object-fit: cover; /* Important pour ne pas déformer ta photo */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* MENU */
+#menu {
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+    position: sticky; /* Le menu reste en haut quand on scrolle */
+    top: 0;
+    z-index: 100;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+    transition: background 0.3s, color 0.3s;
+}
+
+#menu li:last-child a { border-right: none; }
+#menu li a:hover { background-color: #33498c; color: white; }
+
+/* CORPS */
+.corps { padding: 30px 50px; }
+
+h2 {
+    color: #33498c;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Introduction text */
+.intro-text {
+    font-style: italic;
+    color: #555;
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #33498c;
+}
+
+/* TIMELINE ITEMS */
+.timeline-item {
+    display: flex;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 25px 0;
+}
+.timeline-item:last-child { border-bottom: none; }
+
+.date {
+    width: 140px;
+    font-weight: bold;
+    color: #33498c;
+    flex-shrink: 0;
+    padding-top: 5px;
+}
+
+.content { flex-grow: 1; }
+.content h3 { margin: 0 0 5px 0; color: #000; font-size: 1.2em; }
+.company {
+    font-weight: bold;
+    color: #666;
+    margin: 0 0 10px 0;
+    font-variant: small-caps;
+    font-size: 1.1em;
+}
+
+/* SKILLS TABLE */
+.skills-table { width: 100%; border-collapse: collapse; }
+.skills-table td { padding: 12px; border-bottom: 1px solid #eee; vertical-align: top; }
+.skill-category { font-weight: bold; width: 25%; color: #33498c; }
+
+/* HOBBIES GRID */
+.hobbies-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.hobby-item {
+    background: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hobby-item i { color: #33498c; }
+
+/* BOUTON CV */
+.btn-cv {
+    display: inline-block;
+    background-color: #33498c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.btn-cv:hover { background-color: #2a3b75; }
+
+/* FOOTER */
+footer {
+    background-color: #33498c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header-content { flex-direction: column; text-align: center; gap: 20px; }
+    .contact-icons { flex-direction: row; justify-content: center; gap: 15px; }
+    .timeline-item { flex-direction: column; }
+    .date { margin-bottom: 5px; border-bottom: 1px solid #eee; padding-bottom: 5px; width: 100%; }
+    .corps { padding: 20px; }
+    #menu ul { flex-direction: column; }
+    #menu li a { border-right: none; border-bottom: 1px solid #ccc; text-align: center; }
+}
